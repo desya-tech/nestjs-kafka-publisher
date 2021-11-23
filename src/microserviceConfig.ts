@@ -5,7 +5,10 @@ export const microserviceConfig: KafkaOptions = {
 
     options: {
         client: {
-            brokers: ["localhost:9092"],
+            // clientId:'lkc-gzv1r',
+            // ssl: true,
+            // brokers: ["pkc-lzvrd.us-west4.gcp.confluent.cloud:9092"],
+            brokers: ["localhost:9093"],
         },
         consumer: {
             groupId: '1',

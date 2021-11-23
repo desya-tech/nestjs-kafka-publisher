@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.connectMicroservice(microserviceConfig);
 
-  await app.startAllMicroservicesAsync();
+  await app.startAllMicroservices();
   await app.listen(3000);
 }
 bootstrap();
