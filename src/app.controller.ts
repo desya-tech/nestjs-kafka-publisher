@@ -28,9 +28,9 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @EventPattern('entity-created')
-  async handleEntityCreated(payload: any) {
-    console.log(JSON.stringify(payload) + ' created');
-    //console.log(payload.value + ' created');
-  }
+  // @EventPattern('entity-created')
+  // async handleEntityCreated(payload: any) {
+  //   console.log(JSON.stringify(payload) + ' created');
+  //   //console.log(payload.value + ' created');
+  // }
 }
