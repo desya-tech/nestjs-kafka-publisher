@@ -6,7 +6,6 @@ export const microserviceConfig: KafkaOptions = {
 // generated username and pass from confluent->choose your cluster->data-integration->api keys
     options: {
         client: {
-            // clientId:'lkc-gzv1r',
             ssl: true,
             brokers: ["pkc-lzvrd.us-west4.gcp.confluent.cloud:9092"],
             sasl: {
