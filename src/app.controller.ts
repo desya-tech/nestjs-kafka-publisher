@@ -8,8 +8,13 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @MessagePattern("bigquery")
-  async getHello(@Payload() message: KafkaMessage) {
-    console.log(message.value[0]);
-    return message;
+  async getHello2(@Payload() message: KafkaMessage) {
+    console.log(message);
+    return this.appService.getHello();
+  }
+
+  @Get('push')
+  getHello(): string {
+    return this.appService.pushdata();
   }
 }
