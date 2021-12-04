@@ -23,13 +23,13 @@ const kafka = new Kafka({ clientId, brokers, ssl: true,
 const producer = kafka.producer()
 
  producer.connect()
- producer.send({
-    topic: 'topic-name',
-    messages: [
-        { key: 'key1', value: 'hello world' },
-        { key: 'key2', value: 'hey hey!' }
-    ],
-})
+//  producer.send({
+//     topic: 'topic-name',
+//     messages: [
+//         { key: 'key1', value: 'hello world' },
+//         { key: 'key2', value: 'hey hey!' }
+//     ],
+// })
     return 'Hello World!';
   }
 }
